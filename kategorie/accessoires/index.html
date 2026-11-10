@@ -100,6 +100,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5"/></svg>
           <span class="icon-label">Anmelden</span>
         </a>
+        <a class="icon-link" href="/shop-vorschau/merkliste/" title="Merkliste">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>
+          <span class="icon-label">Merkliste</span>
+          
+        </a>
         <a class="icon-link" href="/shop-vorschau/warenkorb/" title="Warenkorb" data-drawer-open aria-controls="cart-drawer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
           <span class="icon-label">Warenkorb</span>
@@ -135,6 +140,15 @@
       
 
 <article class="product-card">
+  <form method="post" action="/shop-vorschau/merkliste/umschalten/" class="wish-form">
+    <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
+    <input type="hidden" name="product" value="4">
+    <input type="hidden" name="next" value="/kategorie/accessoires/">
+    <button type="submit" class="wish-btn" aria-pressed="false" title="Merkliste"
+            aria-label="Umhängetasche Saddle: auf die Merkliste setzen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>
+    </button>
+  </form>
   <a class="product-image" href="/shop-vorschau/produkt/umhaengetasche-saddle/" tabindex="-1" aria-hidden="true">
     
     
@@ -207,6 +221,7 @@
           <a href="/shop-vorschau/">Startseite</a>
           <a href="/shop-vorschau/#produkte">Produkte</a>
           <a href="/shop-vorschau/warenkorb/">Warenkorb</a>
+          <a href="/shop-vorschau/merkliste/">Merkliste</a>
           <a href="/shop-vorschau/versand-und-zahlung/">Versand &amp; Zahlung</a>
         </nav>
         <nav class="footer-col" aria-label="Konto">
@@ -279,14 +294,14 @@
             <strong>34,90 €</strong>
             <div class="stepper">
               <form method="post" action="/shop-vorschau/warenkorb/10/aktualisieren/">
-                <input type="hidden" name="csrfmiddlewaretoken" value="TCXaaJ42jKkiRNaIY80G0eL20FTefcUXRqJzqgsPF7Sl1ub5Pw68HRq5HlGz4SnT">
+                <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
                 <input type="hidden" name="quantity" value="0">
                 <input type="hidden" name="next" value="/kategorie/accessoires/">
                 <button type="submit" aria-label="Menge verringern">−</button>
               </form>
               <span>1</span>
               <form method="post" action="/shop-vorschau/warenkorb/10/aktualisieren/">
-                <input type="hidden" name="csrfmiddlewaretoken" value="TCXaaJ42jKkiRNaIY80G0eL20FTefcUXRqJzqgsPF7Sl1ub5Pw68HRq5HlGz4SnT">
+                <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
                 <input type="hidden" name="quantity" value="2">
                 <input type="hidden" name="next" value="/kategorie/accessoires/">
                 <button type="submit" aria-label="Menge erhöhen" >+</button>
@@ -295,7 +310,7 @@
           </div>
 
           <form method="post" action="/shop-vorschau/warenkorb/10/entfernen/" class="drawer-remove">
-            <input type="hidden" name="csrfmiddlewaretoken" value="TCXaaJ42jKkiRNaIY80G0eL20FTefcUXRqJzqgsPF7Sl1ub5Pw68HRq5HlGz4SnT">
+            <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
             <input type="hidden" name="next" value="/kategorie/accessoires/">
             <button type="submit" aria-label="Keramikvase Salbei entfernen">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
@@ -316,14 +331,14 @@
             <strong>129,00 €</strong>
             <div class="stepper">
               <form method="post" action="/shop-vorschau/warenkorb/13/aktualisieren/">
-                <input type="hidden" name="csrfmiddlewaretoken" value="TCXaaJ42jKkiRNaIY80G0eL20FTefcUXRqJzqgsPF7Sl1ub5Pw68HRq5HlGz4SnT">
+                <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
                 <input type="hidden" name="quantity" value="0">
                 <input type="hidden" name="next" value="/kategorie/accessoires/">
                 <button type="submit" aria-label="Menge verringern">−</button>
               </form>
               <span>1</span>
               <form method="post" action="/shop-vorschau/warenkorb/13/aktualisieren/">
-                <input type="hidden" name="csrfmiddlewaretoken" value="TCXaaJ42jKkiRNaIY80G0eL20FTefcUXRqJzqgsPF7Sl1ub5Pw68HRq5HlGz4SnT">
+                <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
                 <input type="hidden" name="quantity" value="2">
                 <input type="hidden" name="next" value="/kategorie/accessoires/">
                 <button type="submit" aria-label="Menge erhöhen" >+</button>
@@ -332,7 +347,7 @@
           </div>
 
           <form method="post" action="/shop-vorschau/warenkorb/13/entfernen/" class="drawer-remove">
-            <input type="hidden" name="csrfmiddlewaretoken" value="TCXaaJ42jKkiRNaIY80G0eL20FTefcUXRqJzqgsPF7Sl1ub5Pw68HRq5HlGz4SnT">
+            <input type="hidden" name="csrfmiddlewaretoken" value="UnYTSvYwZDECy3d9pIY4ZdRc1GaiFc5YQzZaKvys9WgZPlqs2wDy0oEthD7ECh5Y">
             <input type="hidden" name="next" value="/kategorie/accessoires/">
             <button type="submit" aria-label="Umhängetasche Saddle entfernen">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
